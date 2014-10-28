@@ -4,10 +4,10 @@ import java.util.regex.Pattern;
 
 public class Token {
 
-	private Pattern tokenApplicationRegex;
+	private String tokenApplicationRegex;
 	private String name;
 	
-	public Token(Pattern pattern, String name) {
+	public Token(String pattern, String name) {
 		this.tokenApplicationRegex = pattern;
 		this.name = name;
 	}
@@ -16,7 +16,7 @@ public class Token {
 		return name;
 	}
 	
-	public Pattern getTokenApplicationRegex() {
+	public String getTokenApplicationRegex() {
 		return tokenApplicationRegex;
 	}
 }
